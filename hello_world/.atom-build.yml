@@ -1,6 +1,5 @@
 cmd: build.bat
 name: Build
-cwd: C:\dev\lazy_foo\hello_world
 
 targets:
   Clear:

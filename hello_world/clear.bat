@@ -2,7 +2,7 @@
 @echo off
 
 :: Open the directory folder
-cd C:\dev\lazy_foo\hello_world\build
+cd build
 
 :: Clear the output path
 del * /S /Q
