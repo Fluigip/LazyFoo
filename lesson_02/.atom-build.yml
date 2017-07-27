@@ -1,0 +1,8 @@
+cmd: build.bat
+name: Build
+
+targets:
+  Clear:
+    cmd: clear.bat
+  Run:
+    cmd: run.bat
