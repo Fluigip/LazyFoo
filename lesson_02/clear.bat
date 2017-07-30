@@ -1,9 +1,8 @@
 :: Mute the output
 @echo off
 
-:: Open the directory folder
-cd build
+:: Clear the build path
+rd /S/Q build 2>nul
 
 :: Clear the output path
-del * /S /Q
-del ..\bin\* /S /Q
+rd /S/Q bin 2>nul
