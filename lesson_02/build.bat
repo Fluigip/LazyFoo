@@ -20,8 +20,9 @@ cd build
 call "C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Auxiliary\Build\vcvars32.bat"
 
 :: Compile the program
+echo cl %COMPILER% %SRC% %LINKER%
 cl %COMPILER% %SRC% %OUT% %LINKER%
 
 :: Copy SDL libs
-copy %SDL_LIBRARY%\SDL2.dll ..\bin\SDL2.dll
-copy %DATA% ..\bin\
+xcopy %SDL_LIBRARY%\SDL2.dll ..\bin\SDL2.dll
+xcopy %DATA% ..\bin\ /SY
